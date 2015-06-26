@@ -25,22 +25,22 @@ angular
         .state('business', {
             url: '/business/',
             templateUrl: 'views/business.html',
-            controller: 'BusinessCtrl'
+            // controller: 'BusinessCtrl'
         }) 
          .state('finance', {
             url: '/finance/',
             templateUrl: 'views/finance.html',
-            controller: 'FinanceCtrl'
+            // controller: 'FinanceCtrl'
         }) 
           .state('promoter', {
             url: '/promoter/',
             templateUrl: 'views/promoter.html',
-            controller: 'PromoterCtrl'
+            // controller: 'PromoterCtrl'
         }) 
            .state('principal', {
             url: '/principal/',
             templateUrl: 'views/principal.html',
-            controller: 'PrincipalCtrl'
+            // controller: 'PrincipalCtrl'
         }) 
 
   });
