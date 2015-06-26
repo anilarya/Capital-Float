@@ -46,13 +46,13 @@
     <div class="container"> 
     <div class="row">
         <div class="col-md-2">
-            <div class="list-group">
+            <div class="list-group" ng-controller="DashboardCtrl">
               <a ui-sref="business" class="list-group-item" ng-class="{active: isCurrentLocation('/business/')}">BUSINESS</a>
-              <a ui-sref="finance" class="list-group-item">FINANCES</a>
-              <a ui-sref="promoter" class="list-group-item">PROMOTERS</a>
-              <a ui-sref="principal" class="list-group-item">PRINCIPALS</a>
+              <a ui-sref="finance" class="list-group-item" ng-class="{active: isCurrentLocation('/finance/')}">FINANCES</a>
+              <a ui-sref="promoter" class="list-group-item" ng-class="{active: isCurrentLocation('/promoter/')}">PROMOTERS</a>
+              <a ui-sref="principal" class="list-group-item" ng-class="{active: isCurrentLocation('/principal/')}">PRINCIPALS</a>
               <!-- <a ui-sref="business" class="list-group-item">BUSINESS ADDRESES</a> -->
-              <a ui-sref="business" class="list-group-item">DOCUMENTS</a>
+              <!-- <a ui-sref="business" class="list-group-item" ng-class="{active: isCurrentLocation('/business/')}">DOCUMENTS</a> -->
             </div>
         </div>
         <div class="col-md-10">
