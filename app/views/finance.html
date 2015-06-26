@@ -1,0 +1,63 @@
+<div class="well"> <b>{{model.business.companyName}}</b></div>
+
+<table class="table table-condensed table-striped" style="background-color:;"> 
+    <tbody> 
+        <tr>
+            <td><div>
+                <label>Turnover for FY 2013-14</label></div>
+            </td>
+            <td><div>
+                 	{{model.financials.turnoverPrevyear | number : 2}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div>
+                <label>Turnover for FY 2014-15</label></div>
+            </td>
+            <td><div>
+                 	{{model.financials.turnoverThisyear|  number : 2}}
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>Net profit/loss for FY 2013-14</label></div>
+            </td>
+            <td><div>
+                 	{{model.financials.profitPrevyear|  number : 2}}
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>Net profit/loss for FY 2014-15</label></div>
+            </td>
+            <td><div>
+                 	{{model.financials.profitThisyear|  number : 2}}
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>OD/CC limit</label></div>
+            </td>
+            <td><div ng-if="model.financials.odccLimit">
+                 	model.financials.odccLimit
+                </div>
+                <div ng-if="!model.financials.odccLimit">
+                 	NA
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>Loan Amount Required(In lacks)</label></div>
+            </td>
+            <td><div>
+                 	{{model.financials.loanReq}}
+                </div>
+            </td>
+        </tr>
+      </tbody>
+ </table>

@@ -1,0 +1,41 @@
+
+<div class="well"> <b>{{model.business.companyName}}</b></div>
+
+<table class="table table-condensed table-striped" style="background-color:;"> 
+    <tbody> 
+        <tr>
+            <td><div>
+                <label>Since how many months you have been selling on Flipkart</label></div>
+            </td>
+            <td><div>
+                 	{{model.principals.sellingMonths}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div>
+                <label>Average monthly sales to flipkart</label></div>
+            </td>
+            <td><div>
+                 	{{model.principals.avgMonthlySales}}
+                </div>
+            </td>
+        </tr> 
+        <tr>
+            <td><div>
+                <label>Average payment cycle with flipkart</label></div>
+            </td>
+            <td><div>
+                 	{{model.principals.avgPaymentCycle}}
+                </div>
+            </td>
+        </tr>  
+      </tbody>
+ </table>
+
+
+ <div class="well">Customers
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="data  in model.customer">{{data.marketplace}}</li> 
+    </ul>
+ </div> 

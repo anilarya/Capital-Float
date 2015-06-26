@@ -1,0 +1,60 @@
+<div class="well"> <b>{{model.business.companyName}}</b></div>
+
+<div class="panel panel-default" ng-repeat="detail in model.promoterDetails">
+  <div class="panel-heading">
+    <h3 class="panel-title">Partner/Director {{$index +1}}</h3>
+  </div>
+  <div class="panel-body">
+      <table class="table table-condensed table-striped" style="background-color:;"> 
+    <tbody> 
+        <tr>
+            <td><div>
+                 First Name  : {{detail.firstName}} </div>
+            </td>
+            <td><div>
+                 	Last Name : {{detail.lastName}} &nbsp;
+                 	<a ng-href="{{detail.linkedInProfile}}" target="_blank">LinkedIn Profile</a>
+                </div>
+            </td>
+        </tr>  
+        </tr>
+         <tr>
+            <td><div>
+                <label>Date of Birth</label></div>
+            </td>
+            <td><div>
+                 	{{detail.dob}}
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>Year of Incorporation</label></div>
+            </td>
+            <td><div>
+                 	{{model.business.yearInCorp}}
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <td><div>
+                <label>Residence Ownership</label></div>
+            </td>
+            <td><div>
+                 	{{detail.residenceOwnership}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><div>
+                <label>Phone Number</label></div>
+            </td>
+            <td><div>
+                 	{{detail.MobileNo}}
+                </div>
+            </td>
+        </tr>
+      </tbody>
+ </table>
+  </div>
+</div>
