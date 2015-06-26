@@ -19,6 +19,7 @@ angular.module('parrotApp')
 	        $scope.model.business = result.business ;
 	        $scope.model.principals = result.principals ;
 	        $scope.model.customer = result.customer ;
+	        $scope.model.otherMarketplaces = result.otherMarketplaces ;
 	        console.log("business", $scope.model.principals)
 	    }).error(function (error) {
 	        options.error(error);

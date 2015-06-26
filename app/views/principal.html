@@ -36,6 +36,19 @@
 
  <div class="well">Customers/MarketPlaces
     <ul class="list-group">
-      <li class="list-group-item" ng-repeat="data  in model.customer">{{data.marketplace}}</li> 
+      <li class="list-group-item" ng-repeat="data  in model.customer">
+        <font color="blue" size= "5">{{data.marketplace}}</font>
+        <span ng-if="data.marketurl"><b>Marketurl</b> :  {{data.marketurl}}</span> ,  <span ng-if="data.sellingol"> <b>Number of selling online</b> :  {{data.sellingol}}</span> <span ng-if="data.avgsale"> <b> Average sale</b> : {{data.avgsale}} </span><span ng-if="data.avgpayment"> <b> Average Payment</b> : {{data.avgpayment}} </span>
+
+
+      </li>     
     </ul>
  </div> 
+
+ <div class="well">  Other Market Places : 
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="data  in model.otherMarketplaces">
+        {{data}}
+      </li>
+    </ul>
+ </div>
